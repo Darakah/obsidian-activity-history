@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-activity",
+	"name": "Activity",
+	"version": "0.0.1",
+	"minAppVersion": "0.10.11",
+	"description": "Track activity of specified projects",
+	"author": "darakah",
+	"authorUrl": "https://github.com/Darakah/",
+	"isDesktopOnly": false
+}
