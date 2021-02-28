@@ -19,8 +19,6 @@ export const getProjectSize = (projectPath: string, vaultFiles: TFile[]): number
             projectSize += vaultFiles[file].stat.size;
         }
     }
-
-    console.log(`${projectPath} with size ${projectSize}`)
     return projectSize;
 }
 
