@@ -1,7 +1,14 @@
 # obsidian-history
-Activity monitor for Vault &amp; specified projects
+Github like activity block to track activity for whole vault or a specified project.
 
-![Screen Shot 2021-02-12 at 12.33.31 PM|690x130](https://forum.obsidian.md/uploads/default/optimized/2X/c/c6a268ae974a844c71edf1ec5bed7586fb40fabd_2_1380x260.png) 
+#### Example 1:
+![example_1|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_1.png) 
+
+#### Example 2:
+![example_2|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_2.png) 
+
+#### Example 3:
+![example_3|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_3.png) 
 
 ***Plugin:***
 1. Render block which takes a path as its only argument (to show the activity of that folder / project) i.e. (for example `./` for the whole vault activity)
