@@ -20,6 +20,10 @@ It must contain a single line corresponding to the path of the project, for exam
 - `Project Example Test` for the project located at `/Project Example Test` 
 - `Project Root/Project Second Example/Test Project` for the project located at `/Project Root/Project Second Example/Test Project`
 
+thus to show board for the whole vault:
+![example_5|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_5.png) 
+
+
 By default the plugin tracks `ONLY` the whole vault i.e. `/`. To add more projects, need to input the project name (same as above) in the settings menu of the plugin. If the project inputed is not a valid one it will not be added. It follows the same syntax as the one inputed in the render block. 
 
 `**UPDATE SCHEDUAL:**` The plugin updates every 5 minutes the size of the different tracked projects.
