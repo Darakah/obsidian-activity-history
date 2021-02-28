@@ -1,19 +1,30 @@
-import typescript from '@rollup/plugin-typescript';
-import {nodeResolve} from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import svelte from "rollup-plugin-svelte";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import typescript from "@rollup/plugin-typescript";
+import autoPreprocess from "svelte-preprocess";
+import { env } from "process";
 
 export default {
-  input: 'main.ts',
-  output: {
-    dir: '.',
-    sourcemap: 'inline',
-    format: 'cjs',
-    exports: 'default'
-  },
-  external: ['obsidian'],
-  plugins: [
-    typescript(),
-    nodeResolve({browser: true}),
-    commonjs(),
-  ]
+    input: "src/main.ts",
+    output: {
+        format: "cjs",
+        file: "main.js",
+        exports: "default",
+    },
+    external: ["obsidian", "fs", "os", "path"],
+    plugins: [
+        svelte({
+            emitCss: false,
+            preprocess: autoPreprocess(),
+        }),
+        typescript({ sourceMap: env.env === "DEV" }),
+        resolve({
+            browser: true,
+            dedupe: ["svelte"],
+        }),
+        commonjs({
+            include: "node_modules/**",
+        }),
+    ],
 };
