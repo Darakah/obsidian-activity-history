@@ -30,7 +30,6 @@ export default class ActivityHistoryPlugin extends Plugin {
 				saveSettings;
 			}
 
-			console.log(settings.settings)
 			updateActivityAll(settings.settings, this.app.vault.getMarkdownFiles());
 			saveSettings;
 			loadSettings;
@@ -46,7 +45,6 @@ export default class ActivityHistoryPlugin extends Plugin {
 	}
 
 	async loadSettings() {
-		console.log(this.app.workspace)
 		this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
 	}
 
