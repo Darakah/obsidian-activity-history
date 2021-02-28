@@ -1,4 +1,4 @@
-# obsidian-history
+# Obsidian Activity History
 Github like activity block to track activity for whole vault or a specified project.
 
 #### Example 1:
@@ -10,10 +10,53 @@ Github like activity block to track activity for whole vault or a specified proj
 #### Example 3:
 ![example_3|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_3.png) 
 
-***Plugin:***
-1. Render block which takes a path as its only argument (to show the activity of that folder / project) i.e. (for example `./` for the whole vault activity)
-![Screen Shot 2021-02-12 at 12.35.38 PM|690x46](https://forum.obsidian.md/uploads/default/optimized/2X/8/842747984fb39cf8d9af66a8223324fdc40be4f3_2_1380x92.png) 
-2. In preview mode this block will render the activity similar to Github's contribution board. 
-3. To keep it light, by default the plugin will only track the whole vault activity, to track specific project the user must add that path in the settings for example to track project one the following path must be added `./Project_1`
-4. Hovering over a box will show a % activity relative to the highest activity in current view
-5. Arrows that would change the current year being looked at
+## Usage:
+
+Write the render block example shown below in edit mode in the note in which you want to add the render block.
+![example_4|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_4.png) 
+
+It must contain a single line corresponding to the path of the project, for example:
+- `/` for the whole vault
+- `Project Example Test` for the project located at `/Project Example Test` 
+- `Project Root/Project Second Example/Test Project` for the project located at `/Project Root/Project Second Example/Test Project`
+
+By default the plugin tracks `ONLY` the whole vault i.e. `/`. To add more projects, need to input the project name (same as above) in the settings menu of the plugin. If the project inputed is not a valid one it will not be added. It follows the same syntax as the one inputed in the render block. 
+
+`**UPDATE SCHEDUAL:**` The plugin updates every 5 minutes the size of the different tracked projects.
+
+## Settings:
+![settings|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/settings.png) 
+
+# Customization
+The activity board is highly customizable as shown in the examples shown above. All parameters can be modified in the settings menu `EXCEPT THE BACKGROUND COLOR`! The background color must be changed in the `style.css` file (found in the plugin folder), where you change `white` to whatever desired. 
+
+```css
+.selectYear {
+    border-color: none;
+}
+
+.HistoryBoard {
+    background-color: white;
+    padding: 10px;
+    border-radius: 14px;
+    width: auto;
+    height: auto;
+}
+
+.ObsidianHistoryBlock {
+    background-color: white;
+    border-radius: 14px;
+    width: auto;
+    height: auto;
+}
+
+.selectYear {
+    float: right;
+    margin-bottom: 5px;
+    border-color: white;
+    border-radius: 14px;
+}
+```
+
+## To-Do:
+- [ ] Interactively show value when hovering on cells
