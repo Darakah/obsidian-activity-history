@@ -1,6 +1,7 @@
 # Obsidian Activity History
 ![GitHub release)](https://img.shields.io/github/v/release/Darakah/obsidian-activity-history)
 ![GitHub all releases](https://img.shields.io/github/downloads/Darakah/obsidian-activity-history/total)
+
 Github like activity block to track activity for whole vault or a specified project.
 
 #### Example 1:
