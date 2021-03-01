@@ -161,12 +161,13 @@ export class ActivityHistorySettingTab extends PluginSettingTab {
 			.addText(text => text
 				.setPlaceholder(this.plugin.settings.cellRadius)
 				.onChange(async (value) => {
+					let numValue = parseInt(value)
 					// check if valid hex
-					if (isNaN(parseInt(value))) {
+					if (isNaN(numValue)) {
 						return
 					}
 
-					this.plugin.settings.cellRadius = Math.abs(+value);
+					this.plugin.settings.cellRadius = Math.abs(numValue);
 					await this.plugin.saveSettings();
 				}));
 	}
