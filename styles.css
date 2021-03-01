@@ -1,5 +1,5 @@
 .block-language-ActivityHistory {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 
 .selectYear {
@@ -7,7 +7,7 @@
 }
 
 .HistoryBoard {
-    background-color: white;
+    background-color: transparent !important;
     padding: 10px;
     border-radius: 14px;
     width: auto;
@@ -15,15 +15,16 @@
 }
 
 .ObsidianHistoryBlock {
-    background-color: white;
+    background-color: transparent !important;
     border-radius: 14px;
     width: auto;
     height: auto;
 }
 
 .selectYear {
-    float: right;
-    margin-bottom: 5px;
-    border-color: white;
-    border-radius: 14px;
+    margin: 10px !important;
+    border-radius: 0 !important;
+    border-color: transparent !important;
+    background: #1b1b1b;
+    color: rgb(201, 201, 201);
 }
