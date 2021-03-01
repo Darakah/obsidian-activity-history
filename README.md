@@ -5,13 +5,13 @@
 Github like activity block to track activity for whole vault or a specified project.
 
 #### Example 1:
-![example_1|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_1.png) 
+![example_1](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_1.png) 
 
 #### Example 2:
-![example_2|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_2.png) 
+![example_2](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_2.png) 
 
 #### Example 3:
-![example_3|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_3.png) 
+![example_3](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_3.png) 
 
 ## Usage:
 
@@ -19,7 +19,7 @@ Github like activity block to track activity for whole vault or a specified proj
 The plugin can show only activity from the date it is ACTIVATED as it tracks the change in size for the specified tracked projects. this means no info will be shown before that date.
 
 Write the render block example shown below in edit mode in the note in which you want to add the render block.
-![example_4|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_4.png) 
+![example_4](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_4.png) 
 
 It must contain a single line corresponding to the path of the project, for example:
 - `/` for the whole vault
@@ -27,7 +27,7 @@ It must contain a single line corresponding to the path of the project, for exam
 - `Project Root/Project Second Example/Test Project` for the project located at `/Project Root/Project Second Example/Test Project`
 
 thus to show board for the whole vault:
-![example_5|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_5.png) 
+![example_5](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_5.png) 
 
 
 By default the plugin tracks `ONLY` the whole vault i.e. `/`. To add more projects, need to input the project name (same as above) in the settings menu of the plugin. If the project inputed is not a valid one it will not be added. It follows the same syntax as the one inputed in the render block. 
@@ -35,7 +35,7 @@ By default the plugin tracks `ONLY` the whole vault i.e. `/`. To add more projec
 `**UPDATE SCHEDUAL:**` The plugin updates every 5 minutes the size of the different tracked projects.
 
 ## Settings:
-![settings|690x130](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/settings.png) 
+![settings](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/settings.png) 
 
 # Customization
 The activity board is highly customizable as shown in the examples shown above. All parameters can be modified in the settings menu `EXCEPT THE BACKGROUND COLOR`! The background color must be changed in the `style.css` file (found in the plugin folder), where you change `white` to whatever desired. 
