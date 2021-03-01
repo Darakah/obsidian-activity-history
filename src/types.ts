@@ -20,15 +20,15 @@ export interface InitializedProject {
 
 export interface ActivityHistory {
 	path: string,
-	size: [DayActivity]
+	size: DayActivity[]
 }
 
 export interface ActivitySettings {
 	firstRun: boolean,
-	initialized: [InitializedProject],
-	trackedProjects: [string],
-	checkpointList: [Checkpoint],
-	activityHistory: [ActivityHistory]
+	initialized: InitializedProject[],
+	trackedProjects: string[],
+	checkpointList: Checkpoint[],
+	activityHistory: ActivityHistory[],
 	activityColor1: string,
 	activityColor2: string,
 	activityColor3: string,

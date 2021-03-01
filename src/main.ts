@@ -22,21 +22,18 @@ export default class ActivityHistoryPlugin extends Plugin {
 		});
 
 		// Update all tracked projects on events
-		setInterval(function(this, settings, saveSettings, loadSettings) {
-			if(settings.settings.firstRun){
-				removeProject('/', settings.settings)
-				addProject('/', settings.settings, this.app.vault.getMarkdownFiles())
-				settings.settings.firstRun = false
-				saveSettings;
+		setInterval(() => {
+			if(this.settings.firstRun){
+				removeProject('/', this.settings)
+				addProject('/', this.settings, this.app.vault.getMarkdownFiles())
+				this.settings.firstRun = false
+				this.saveSettings();
 			}
-
-			updateActivityAll(settings.settings, this.app.vault.getMarkdownFiles());
-			saveSettings;
-			loadSettings;
-		}, 200000, this, this.settings, this.saveSettings, this.loadSettings)
-		
-		await this.saveSettings();
-
+			
+			updateActivityAll(this.settings, this.app.vault.getMarkdownFiles());
+			this.saveSettings();
+		  }, 200000);
+	
 		this.addSettingTab(new ActivityHistorySettingTab(this.app, this));
 	}
 

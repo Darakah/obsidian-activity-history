@@ -162,7 +162,7 @@ export class ActivityHistorySettingTab extends PluginSettingTab {
 				.setPlaceholder(this.plugin.settings.cellRadius)
 				.onChange(async (value) => {
 					// check if valid hex
-					if (!Number.isInteger(+value)) {
+					if (isNaN(parseInt(value))) {
 						return
 					}
 
