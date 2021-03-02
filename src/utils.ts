@@ -45,8 +45,10 @@ export const updateActivity = (projectPath: string, vaultFiles: TFile[], activit
 export const getTimestamp = (): string => {
     let today = new Date();
     let timestamp = today.getFullYear().toString();
-    timestamp += `-${(today.getMonth() + 1 < 9 ? '0' : '') + today.getMonth().toString()}`;
-    timestamp += `-${((today.getDate() + 1 < 10) ? '0' : '') + today.getDate().toString()}`;
+    let month = today.getMonth() + 1
+    let date = today.getDate()
+    timestamp += `-${((month < 10) ? '0' : '') + month.toString()}`;
+    timestamp += `-${((date < 10) ? '0' : '') + date.toString()}`;
     return timestamp
 }
 

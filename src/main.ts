@@ -32,7 +32,7 @@ export default class ActivityHistoryPlugin extends Plugin {
 			
 			updateActivityAll(this.settings, this.app.vault.getMarkdownFiles());
 			this.saveSettings();
-		  }, 200000);
+		  }, 2000);
 	
 		this.addSettingTab(new ActivityHistorySettingTab(this.app, this));
 	}
