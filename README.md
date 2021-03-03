@@ -2,8 +2,6 @@
 ![GitHub release)](https://img.shields.io/github/v/release/Darakah/obsidian-activity-history)
 ![GitHub all releases](https://img.shields.io/github/downloads/Darakah/obsidian-activity-history/total)
 
-**IMPORTANT:** If you are updating from `0.1.1` please uninstall the plugin (to remove the data.json) and then install `0.1.3`!! 
-
 Github like activity block to track activity for whole vault or a specified project.
 
 #### Example 1:

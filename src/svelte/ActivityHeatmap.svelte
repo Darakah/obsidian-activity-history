@@ -7,8 +7,10 @@
   export let textColor;
   export let emptyColor = "#ecedf0";
   export let cellRadius = 1;
+  export let type = "yearly";
   let startDate = `${year}/01/01`;
   let endDate = `${year}/12/31`;
+
   let monthlabel = [
     "",
     "Feb",
@@ -23,11 +25,28 @@
     "Nov",
     "Dec",
   ];
+
+  if(type == "monthly"){
+    monthlabel = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  }
 </script>
 
 <SvelteHeatmap
   {data}
-  view="yearly"
+  view={type}
   {startDate}
   {endDate}
   monthLabels={monthlabel}

@@ -35,5 +35,6 @@ export interface ActivitySettings {
 	activityColor4: string,
 	textColor: string,
 	emptyColor: string,
-	cellRadius: number
+	cellRadius: number,
+	type: string
 }

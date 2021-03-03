@@ -2,6 +2,7 @@ import type { ActivitySettings } from './types';
 import ActivityHeatmap from './svelte/ActivityHeatmap.svelte';
 import { isTracked, getYearRange, getProjectActivityHistory } from './utils';
 import Year from './svelte/Year.svelte';
+import { SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER } from 'constants';
 
 export class ActivityHistoryProcessor {
 
@@ -51,7 +52,8 @@ export class ActivityHistoryProcessor {
 				colors: [settings.activityColor1, settings.activityColor2, settings.activityColor3, settings.activityColor4],
 				textColor: settings.textColor,
 				emptyColor: settings.emptyColor,
-				cellRadius: settings.cellRadius
+				cellRadius: settings.cellRadius,
+				type: settings.type
 			},
 			target: boardEL
 		});

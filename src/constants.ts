@@ -13,5 +13,6 @@ export const DEFAULT_SETTINGS: ActivitySettings = {
 	activityColor4: '#196127',
 	textColor: '#000000',
 	emptyColor: '#ecedf0',
-	cellRadius: 1
+	cellRadius: 1,
+	type: 'yearly'
 }

@@ -1,6 +1,6 @@
 {
     "name": "Activity History",
-    "version": "0.1.1",
+    "version": "0.1.4",
     "description": "Track activity of specified projects, Github like activity board",
     "author": "darakah",
     "main": "main.js",

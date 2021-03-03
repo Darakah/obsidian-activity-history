@@ -72,6 +72,19 @@ export class ActivityHistorySettingTab extends PluginSettingTab {
 		new Setting(containerEl)
 			.setName('Activity 1 Color:')
 			.setDesc('Color for lowest activity. Placeholder shows current color.')
+			.addDropdown(dropDown =>
+                dropDown
+                    .addOption('yearly', 'Yearly')
+                    .addOption('monthly', 'Monthly')
+                    .setValue(this.plugin.settings.type || 'yearly')
+                    .onChange((value: string) => {
+                        this.plugin.settings.type = value;
+                        this.plugin.saveSettings();
+                    }));
+
+		new Setting(containerEl)
+			.setName('Activity 1 Color:')
+			.setDesc('Color for lowest activity. Placeholder shows current color.')
 			.addText(text => text
 				.setPlaceholder(this.plugin.settings.activityColor1)
 				.onChange(async (value) => {
