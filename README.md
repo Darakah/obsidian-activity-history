@@ -68,5 +68,8 @@ The activity board is highly customizable as shown in the examples shown above. 
 }
 ```
 
-## To-Do:
-- [ ] Interactively show value when hovering on cells
+## Release Notes
+
+### v0.1.4
+- Added `monthly` option to the settings tab
+
