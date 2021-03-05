@@ -73,3 +73,7 @@ The activity board is highly customizable as shown in the examples shown above. 
 ### v0.1.4
 - Added `monthly` option to the settings tab
 
+
+## Support
+
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="BuyMeACoffee" width="100">](https://www.buymeacoffee.com/darakah)
