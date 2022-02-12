@@ -13,9 +13,25 @@ Github like activity block to track activity for whole vault or a specified proj
 #### Example 3:
 ![example_3](https://raw.githubusercontent.com/Darakah/obsidian-activity-history/main/images/example_3.png) 
 
+
+## Instructions to Get Started:
+Step 1. Create a New Note.
+
+Step 2. Inside that note, paste the following code:
+
+~~~markdown
+```ActivityHistory
+/ 
+```
+~~~
+
+Step 3. Hit 'Enter' and you should see a graph that looks something like the images included above.
+
+---
+
 ## Usage:
 
-!!!!IMPORTANT!!!!
+:bangbang: IMPORTANT :bangbang:
 The plugin can show only activity from the date it is ACTIVATED as it tracks the change in size for the specified tracked projects. this means no info will be shown before that date.
 
 Write the render block example shown below in edit mode in the note in which you want to add the render block.
